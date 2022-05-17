@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+    --primary-color: #F0131E;
+    --bg-color: #1d0000;
+    --text-light: #f4f4f4;
+    --text-dark: #263238;
+    --text-gray: #555;
+    --light-gray: #ddd;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--light-gray);
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+}
+
+/* ############## Utility Classes ################ */
+
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2rem
+}
+
+.text-light{
+    color: var(--text-light);
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0em;
+    border-radius: 10rem;
+}
+
+.primary-btn{
+    color: var(--text-light);
+    border: 2px solid var(--text-light);
+}
+
+.primary-btn:hover{
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.secondry-btn{
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.secondry-btn:hover{
+    font-weight: bolder;
+}
+
+/* ###################### Navbar styling ####################  */
+
+.hero .navbar .logo{
+    margin-top: 0.5rem;
+    width: 12rem;
+    float: left;
+}
+
+.hero{
+    background-color: var(--text-dark);
+}
+
+.hero .navbar .navitems{
+    list-style: none;
+    float: right;
+    padding: 2.5rem 0rem;
+}
+
+.hero .navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hero .navbar .navitems .navitem a{
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+.hero .navbar .navitems .navitem{
+    display: inline-block;
+    padding: 0.75rem ;
+    margin: auto 1rem;
+}
+
+.navitem .active{
+    font-weight: bold;
+}
+
+.navitem a:hover{
+    padding-bottom: 0.5rem ;
+    border-bottom: 1px solid var(--text-light) ;
+}
+
+/* ################# Contact section styling ################ */
+
+.contact{
+    padding: 5rem 0;
+    line-height: 3rem;
+}
+
+.company-address{
+    float: left;
+    width: 49%;
+    padding: 1.75rem;
+    background: var(--text-light);
+    border-radius: 1rem;
+    min-height: 82rem;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.39)
+}
+
+.contact-form{
+    float: right;
+    width: 49%;
+    padding: 1.75rem;
+    background: var(--text-light);
+    border-radius: 1rem;
+    min-height: 82rem;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.39) 
+}
+
+.contact-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ################# Address Styling #################### */
+
+.fas{
+    color: var(--primary-color);
+}
+
+.address-heading{
+    color: var(--text-gray);
+    padding-left: 1rem;
+    font-size: 2.5em;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.address-group{
+    margin-bottom: 3rem;
+}
+
+.address-content{
+    font-style: normal;
+    text-align: justify;
+}
+
+.place-image{
+    max-width: 100%;
+    min-height: 44rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+/* ################### Form Styling ###################  */
+.contact-heading{
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.contact-heading::after{
+    content: '';
+    display: block;
+    margin-top: 1rem;
+    border-top: 6px solid var(--primary-color);
+}
+
+.for-para{
+    text-align: justify;
+}
+
+.form-group label{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem ;
+    font-weight: 400;
+}
+
+.asterisk label::after{
+    content: ' *';
+    color: var(--primary-color);
+}
+
+.form-group input{
+    padding: 0.75rem;
+    width: 100%;
+    border: none;
+    background: var(--text-light);
+    outline: none;
+    border-bottom: 2px var(--text-dark) solid;
+}
+
+.form-group .phone-input select{
+    float: left;
+    width: 20%;
+    padding: 0.75rem;
+    border: none;
+    background: var(--text-light);
+    outline: none;
+    border-bottom: 2px var(--text-dark) solid;
+    text-align: center;
+}
+
+.form-group .phone-input input{
+    float: right;
+    width: 78%;
+    padding-bottom: 1rem;
+}
+
+.form-group .phone-input::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-group input:focus{
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+.form-group textarea{
+    padding: 0.75rem;
+    margin-top: 1rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 17rem;
+    max-height: 27rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--text-light);
+    outline: none;
+    border: 2px var(--text-dark) solid;
+}
+
+.form-group textarea:focus{
+    border: 2px var(--primary-color) solid;
+}
+
+.form-btn{
+    display: block;
+    margin: 1rem auto;
+    padding: 1.25rem 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: var(--text-light);
+    background: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background: var(--text-dark);
+}
+
+/* ######################## Footer Styling ################### */
+
+.footer{
+    background: var(--text-dark);
+    color: var(--text-light);
+    padding: 5rem;
+    text-align: center;
+}
+
+.icon{
+    color: var(--text-light);
+    margin: 2rem;
+}
+
+.icon:hover{
+    color: #ED213A;
+}
+
+.copyright-box img{
+    max-width: 5rem;
+    float: left;
+    margin-left: 28%;
+}
+
+.copyright-box .text{
+    float: right;
+    padding: 1.5rem 0;
+    margin-right: 28%;
+}
+
+.copyright-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}

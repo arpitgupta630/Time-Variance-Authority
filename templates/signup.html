@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/925e21a4ac.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="stylesheet" href="../static/signup.css">
+        <title>TVA | Jobs</title>
+    </head>
+    <body>
+
+        <header class="hero">
+            <nav class="navbar">
+                <div class="container">
+                    <a href="./index.html">
+                        <img class="logo" src="../static/images/logo.png" alt="TVA Logo">
+                    </a>
+                    <ul class="navitems">
+                        <li class="navitem"><a href="./index.html">Home</a></li>
+                        <li class="navitem"><a href="./about.html">About Us</a></li>
+                        <li class="navitem"><a href="./blog.html">Blogs</a></li>
+                        <li class="navitem"><a href="./contact.html">Contact Us</a></li>
+                        <li class="navitem"><a class="active" href="./signup.html">Jobs</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="jobs">
+            <div class="container">
+                <h1 class="lg-heading job-heading">Become a Minute-Men</h1>
+                <form action="job_form" method="post" class="signup-form">
+                    
+                    
+                    <div class="name-wrapper">
+                        <div class="form-group asterisk fname">
+                            <label for="firstname">First Name: </label>
+                            <input type="text" id="firstname" placeholder="Type your First Name" name="firstname" required>
+                        </div>
+
+                        <div class="form-group asterisk lname">
+                            <label for="lastname">Last Name: </label>
+                            <input type="text" id="lastname" placeholder="Type your Last Name" name="lastname" required>
+                        </div>
+                    </div>
+
+                    <div class="radio-group">
+                        <p class="asterisk">Select Your Gender: </p>
+                        <div class="gender">
+                            <input type="radio" name="gender" id="male" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+
+                        <div class="gender">
+                            <input type="radio" name="gender" id="female" value="female" required>
+                            <label for="female">Female</label>
+                        </div>
+
+                        <div class="gender">
+                            <input type="radio" name="gender" id="other" value="other" required>
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group asterisk">
+                        <label for="dob">Date of Birth: </label> 
+                        <input type="date" name="birthday" id="dob" required>
+                    </div>
+
+                    <div class="form-group asterisk">
+                        <label for="qualification">Qualification: </label>
+                        <select name="qualification" id="qualification" required>
+                            <option value="None">Select</option>
+                            <option value="phd">Ph.D</option>
+                            <option value="postGraduate">Post Graduation</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="highSchool">High School</option>
+                            <option value="secondary">Secondary</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group asterisk">
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" placeholder="Type your Username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group asterisk">
+                        <label for="password">Pasword: </label>
+                        <input type="password" id="password" placeholder="Type your Password" name="password" required>
+                    </div>
+
+                    <div class="form-group asterisk">
+                        <div class="phone-input">
+                            <label for="phone country-code">Phone</label>
+                            <select name="country_code" id="country-code">
+                                <option value="+1">US &plus;1</option>
+                                <option value="+91">INDIA &plus;91</option>
+                                <option value="+7">RUSSIA &plus;7</option>
+                                <option value="+33">FRANCE &plus;33</option>
+                                <option value="+86">CHINA &plus;86</option>
+                            </select>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group asterisk">
+                        <label for="email">Email Id: </label>
+                        <input type="email" id="email" placeholder="Type your Email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bio">Describe Yourself:</label>
+                        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="type here..."></textarea>
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit" value="Apply" class="form-btn apply">
+                        <input type="reset" value="Reset" class="form-btn reset">
+                    </div>
+                    <a href="./index.html">Back to Home</a>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="icon-box">
+                    <a href="https://www.linkedin.com/in/arpitgupta630/" target="_blank">
+                        <i class="fab fa-linkedin fa-3x icon"></i>
+                    </a>
+                    <a href="https://twitter.com/arpitgupta630" target="_blank">
+                        <i class="fab fa-twitter fa-3x icon"></i>
+                    </a>
+                    <a href="https://github.com/arpitgupta630" target="_blank">
+                        <i class="fab fa-github fa-3x icon"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright-box">
+                    <img src="../static/images/copyright-image.png" alt="TVA Original Logo">
+                    <p class= "text">Time Variance Authority &copy; 2021 All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

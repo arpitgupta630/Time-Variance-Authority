@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/925e21a4ac.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="stylesheet" href="../static/signup.css">
+        <title>TVA | Jobs</title>
+    </head>
+    <body>
+
+        <header class="hero">
+            <nav class="navbar">
+                <div class="container">
+                    <a href="./index.html">
+                        <img class="logo" src="../static/images/logo.png" alt="TVA Logo">
+                    </a>
+                    <ul class="navitems">
+                        <li class="navitem"><a href="./index.html">Home</a></li>
+                        <li class="navitem"><a href="./about.html">About Us</a></li>
+                        <li class="navitem"><a href="./blog.html">Blogs</a></li>
+                        <li class="navitem"><a href="./contact.html">Contact Us</a></li>
+                        <li class="navitem"><a class="active" href="./signup.html">Jobs</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="jobs">
+            <div class="container" align="center">
+                <h1>{{firstname}}Job Application has been Submitted</h1>
+                <img src="../static/images/minutemen.jpg" alt="Minute Men" height="500rem">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="icon-box">
+                    <a href="https://www.linkedin.com/in/arpitgupta630/" target="_blank">
+                        <i class="fab fa-linkedin fa-3x icon"></i>
+                    </a>
+                    <a href="https://twitter.com/arpitgupta630" target="_blank">
+                        <i class="fab fa-twitter fa-3x icon"></i>
+                    </a>
+                    <a href="https://github.com/arpitgupta630" target="_blank">
+                        <i class="fab fa-github fa-3x icon"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright-box">
+                    <img src="../static/images/copyright-image.png" alt="TVA Original Logo">
+                    <p class= "text">Time Variance Authority &copy; 2021 All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

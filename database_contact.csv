@@ -1,0 +1,7 @@
+name, email, country_code, phone, message
+First Csv User,csv.firstuser@mail.com,+7,123456789,Message from first CSV user
+Second Csv User,csv.seconduser@mail.com,+86,987654321,Message from second csv usr
+Third Csv User,csv.thirduser@mail.com,+1,654987321,Message form third csv user
+Forth Csv User,csv.forthuser@mail.com,+33,626526160,Forth Csv user msg
+Fifth,csv.fifthuser@mail.com,+91,156113165,msg
+Test User,test.mail@test.com,+91,95322,test megs

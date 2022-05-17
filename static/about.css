@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+    --primary-color: #F0131E;
+    --bg-color: #1d0000;
+    --text-light: #f4f4f4;
+    --text-dark: #263238;
+    --text-gray: #555;
+    --light-gray: #ddd;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.10em;
+    font-weight: 500;
+}
+
+/* ############## Utility Classes ################ */
+
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2rem
+}
+
+.text-light{
+    color: var(--text-light);
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0em;
+    border-radius: 10rem;
+}
+
+.primary-btn{
+    color: var(--text-light);
+    border: 2px solid var(--text-light);
+}
+
+.primary-btn:hover{
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.secondry-btn{
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.secondry-btn:hover{
+    font-weight: bolder;
+}
+
+/* ###################### Navbar styling ####################  */
+
+.hero .navbar .logo{
+    margin-top: 0.5rem;
+    width: 12rem;
+    float: left;
+}
+
+.hero{
+    background-color: var(--text-dark);
+}
+
+.hero .navbar .navitems{
+    list-style: none;
+    float: right;
+    padding: 2.5rem 0rem;
+}
+
+.hero .navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hero .navbar .navitems .navitem a{
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+.hero .navbar .navitems .navitem{
+    display: inline-block;
+    padding: 0.75rem ;
+    margin: auto 1rem;
+}
+
+.navitem .active{
+    font-weight: bold;
+}
+
+.navitem a:hover{
+    padding-bottom: 0.5rem ;
+    border-bottom: 1px solid var(--text-light) ;
+}
+
+/* ####################### about section styling ############################# */
+
+.about{
+    padding: 5rem 0;
+    line-height: 3rem;
+}
+
+.about-heading{
+    color: var(--text-gray);
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    margin-top: 1rem;
+    border-top: 6px solid var(--primary-color);
+}
+
+/* ################ about list styling ##################### */
+
+.about-list{
+    text-align: center;
+    margin-top: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.658)) ,url(../static/images/timekeepers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 15rem;
+    color: var(--text-light);
+    line-height: 3.5rem;
+}
+
+.list-heading{
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+}
+
+.list{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.list p{
+    font-weight: bold;
+    padding-top: 2.5rem;
+}
+
+.about-list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.do-list li::before{
+    content: "\2713";
+    font-weight: bolder;
+    color: var(--primary-color);
+    padding-right: 1rem;
+}
+
+.do-not-list li::before{
+    content: "\2717";
+    font-weight: bolder;
+    color: var(--primary-color);
+    padding-right: 1rem;
+}
+
+/* ######################## count styling ###################### */
+
+.count{
+    margin-top: 1.5rem;
+    padding: 2rem 1rem;
+}
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.count-item span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.count-item p{
+    font-weight: bolder;
+    color: var(--text-dark);
+}
+
+/* ####################### Banner Styling ###################### */
+
+.banner{
+    padding: 2rem;
+    height: 80vh;
+}
+
+.banner-item{
+    text-align: center;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    background: #ED213A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.banner-item h2{
+    float: left;
+    width: 65%;
+    color: var(--text-light);
+    padding-top: 0.75rem;
+}
+
+.banner-item a{
+    float: right;
+    margin-right: 5rem;
+    padding: 1rem;
+    font-size: 2em;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.banner-item::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.banner-item .primary-btn:hover{
+    border: none;
+    /* text-decoration: underline; */
+    border-bottom: 2px var(--text-light) solid;
+}
